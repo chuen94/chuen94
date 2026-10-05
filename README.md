@@ -20,11 +20,7 @@ real production data.
 ## Featured Projects
 
 ### [Factory Telemetry Pipeline](https://github.com/chuen94/manufacturing_pipeline)
-Near-real-time (micro-batch) ELT pipeline for manufacturing line telemetry, running
-end-to-end on synthetic data so it clones and runs anywhere. A generator simulates
-per-minute multi-line sensor output; dbt models it incrementally (long-format fact,
-SCD2 dimension, tests, source freshness, exposure); and a Parquet serving layer feeds
-an auto-refreshing Grafana dashboard. CI runs `dbt build` on every push.
+Manufacturing analytics pipeline on synthetic data. DuckDB + dbt models (incremental fact, SCD2, tests) feed a Grafana dashboard, and a material-substitution analysis tests whether a swap really changes scrap, downtime or yield. CI runs dbt build on every push.
 **Stack:** Python · DuckDB · dbt Core · Grafana · GitHub Actions
 
 ### [SECOM — High-Dimensional Sensor Pipeline](https://github.com/chuen94/SECOM)
