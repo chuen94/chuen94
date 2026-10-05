@@ -21,6 +21,7 @@ real production data.
 
 ### [Factory Telemetry Pipeline](https://github.com/chuen94/manufacturing_pipeline)
 Manufacturing analytics pipeline on synthetic data. DuckDB + dbt models (incremental fact, SCD2, tests) feed a Grafana dashboard, and a material-substitution analysis tests whether a swap really changes scrap, downtime or yield. CI runs dbt build on every push.
+
 **Stack:** Python · DuckDB · dbt Core · Grafana · GitHub Actions
 
 ### [SECOM — High-Dimensional Sensor Pipeline](https://github.com/chuen94/SECOM)
